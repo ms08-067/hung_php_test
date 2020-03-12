@@ -80,7 +80,7 @@ Route::post('admin/logged', array('as' => 'admin.logged', 'uses' => '\Nova\Admin
 
 
 
-/******************************** End admin route not login ******************************************/
+/******************************** End admin route not login ********************/
 
 
 
@@ -127,17 +127,6 @@ Route::group(['middleware' => 'Admin'], function () {
 	    'uses' => '\Nova\Admin\Http\Controllers\IndexController@logout'
 	]);
 
-	Route::get('admin/admin-info', [
-	    'as'   => 'admin.adminInfo',  
-	    'uses' => '\Nova\Admin\Http\Controllers\IndexController@adminInfo'
-	]);
-
-	Route::post('admin/admin-info-submit', [
-	    'as'   => 'admin.adminInfoSubmit',  
-	    'uses' => '\Nova\Admin\Http\Controllers\IndexController@adminInfoSubmit'
-	]);
-
-
 
 	Route::get('admin/email-template', [
 
@@ -160,11 +149,6 @@ Route::group(['middleware' => 'Admin'], function () {
 	Route::post('admin/email-template-store', [
 	    'as' => 'admin.storemailTemplate', 
 	    'uses' => '\Nova\Admin\Http\Controllers\IndexController@storemailTemplate'
-	]);
-
-	Route::post('get-data-job', [
-	    'as' => 'admin.getDataJob', 
-	    'uses' => '\Nova\Home\Http\Controllers\IndexController@getDataJob'
 	]);
 
 	Route::post('admin/sendEmailTest', [
@@ -225,16 +209,6 @@ Route::group(['middleware' => 'Admin'], function () {
 	    'uses' => '\Nova\Admin\Http\Controllers\IndexController@updateTemplateSubmit'
 	]);
 
-	Route::post('admin/remove-logo-top-navbar', [
-	    'as'   => 'admin.removeLogoTopBar',  
-	    'uses' => '\Nova\Admin\Http\Controllers\IndexController@removeLogoTopBar'
-	]);
-
-	Route::post('admin/remove-photo-contact', [
-	    'as'   => 'admin.removePhotoContact',  
-	    'uses' => '\Nova\Admin\Http\Controllers\IndexController@removePhotoContact'
-	]);
-
 	Route::get('admin/view-content-email', [
 	    'as'   => 'admin.viewEmail',  
 	    'uses' => '\Nova\Admin\Http\Controllers\IndexController@viewEmail'
@@ -281,22 +255,6 @@ Route::group(['middleware' => 'Admin'], function () {
 	    'uses' => '\Nova\Admin\Http\Controllers\IndexController@newForm'
 	]);
 
-
-	Route::get('admin/webmaster-plan/{id?}', [
-
-	    'as'   => 'admin.webPlan',  
-
-	    'uses' => '\Nova\Admin\Http\Controllers\IndexController@webPlan'
-	]);
-
-
-	Route::post('admin/webmaster-plan-submit/{id?}', [
-
-	    'as'   => 'admin.webPlanSubmit',  
-
-	    'uses' => '\Nova\Admin\Http\Controllers\IndexController@webPlanSubmit'
-	]);
-
 	Route::post('admin/newForm-submit', [
 
 
@@ -311,12 +269,6 @@ Route::group(['middleware' => 'Admin'], function () {
 
 	]);
 
-
-
-
-
-
-
 	Route::get('admin/changePass', [
 
 
@@ -330,12 +282,6 @@ Route::group(['middleware' => 'Admin'], function () {
 
 
 	]);
-
-
-
-
-
-
 
 	Route::post('admin/changePassSubmit', [
 
@@ -431,17 +377,32 @@ Route::get('account-sign-out',[
     'uses' => '\Nova\User\Http\Controllers\IndexController@logout'
 ]);
 
+Route::get('user-sigin-to-post-article',[
+    'as' => 'user.siginPostArticle',
+    'uses' => '\Nova\User\Http\Controllers\IndexController@siginPostArticle'
+]);
+
 /************** End User route not login ********/
-
-
-
 Route::group(['middleware' => 'User'], function () {
 
 
 
 	//User route has loged
 
+	Route::get('/my-blog', [
+	    'as' => 'user.myAccount',
+	    'uses' => '\Nova\User\Http\Controllers\IndexController@listMyBlog'
+	]);
 
+	Route::get('detail-blog/{id}', [
+	    'as' => 'user.detailPost',
+	    'uses' => '\Nova\User\Http\Controllers\IndexController@detailPost'
+	]);
+
+	Route::get('user-post-article/{id?}', [
+	    'as' => 'user.postArticle',
+	    'uses' => '\Nova\User\Http\Controllers\IndexController@postArticle'
+	]);
 
 	Route::get('home', [
 

@@ -74,6 +74,7 @@
 									<th width="10">ID</th>
 									<th width="90">Title</th>
 									<th width="90">Intro Text</th>
+									<th width="90">Author</th>
 									<th width="40">Status</th>
 									<th width="120">Publish at</th>
 									<th width="120">Created at</th>
@@ -93,7 +94,7 @@
 											<?php $intro_txt = trim(strip_tags($post->intro_txt));?>
 											{{ (strlen($intro_txt) > 200) ? substr($intro_txt,0,200)."..." : $intro_txt }}
 										</td>
-										
+										<td>{{user($post->user_id)->name()}}</td>
 										<td style="padding-top: 14px;"> {!! $post->status == 1 ? '<a rel="'.$post->id.'" data-status="0" style="text-decoration: none;cursor: pointer;" class="statusItem btn-small btn-success">&nbsp;Public&nbsp;</a>' : '<a rel="'.$post->id.'" data-status="1" style="text-decoration: none;cursor: pointer;" class="statusItem btn-small btn-danger">UnPublic</a>' !!}</td>
 										
 										<td>{{ !empty($post->published_at) && ($post->published_at != "0000-00-00 00:00:00") ? date('M d, Y H:i', strtotime($post->published_at)) : "" }}</td>

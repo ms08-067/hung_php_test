@@ -6,21 +6,18 @@
 				Home
 			</a>
 		</li>
+		
 		@if(Auth::check())
 		<li>
-			<a href="" class="btn btn-theme2">
-				Account
+			<a href="{{ route('user.myAccount') }}" class="btn btn-theme2">
+				My Account
 			</a>
 		</li>
 		<li>
 			<a href="{{ URL::route('user.logout') }}" class="btn btn-theme2">
-
 				Sign Out
-
 			</a>
-
 		</li>
-
 		@else
 
 			<li>

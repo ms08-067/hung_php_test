@@ -6,21 +6,18 @@
 				Home
 			</a>
 		</li>
+		
 		<?php if(Auth::check()): ?>
 		<li>
-			<a href="" class="btn btn-theme2">
-				Account
+			<a href="<?php echo e(route('user.myAccount')); ?>" class="btn btn-theme2">
+				My Account
 			</a>
 		</li>
 		<li>
 			<a href="<?php echo e(URL::route('user.logout')); ?>" class="btn btn-theme2">
-
 				Sign Out
-
 			</a>
-
 		</li>
-
 		<?php else: ?>
 
 			<li>

@@ -14,7 +14,7 @@
 	<div class="container">			
 		<?php if(View::hasSection('sidebar')): ?>
 
-			<div class="col-md-3">
+			<div class="sidebar col-md-3">
 
 				<?php echo $__env->yieldContent('sidebar'); ?>
 
