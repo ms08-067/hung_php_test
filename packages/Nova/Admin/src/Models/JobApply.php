@@ -1,0 +1,1 @@
+<?php/*************************/namespace Nova\Admin\Models;use Illuminate\Database\Eloquent\Model;class JobApply extends Model {	public $timestamps = false;	protected $guarded = array();	public static $rules = array();	protected $connection = 'mysql';	protected $table 	  = 'job_apply';}?>

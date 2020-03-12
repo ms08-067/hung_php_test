@@ -1,0 +1,9 @@
+html,body{width:100%}
+.includeContainer .container,.includeContainer .center-container-wide{width:100%}
+.includeContainer div.mainHeader div.menu{width:100%}
+div.mainContainer{margin:0}
+.right-tos{display:none}
+.form-horizontal .form-group{margin-left:0;margin-right:0;margin-bottom:10px}
+img.captcha{width:250px}
+.box-1{margin:10px 0 20px 0}
+div#header{padding:5px 0;margin-bottom:10px}

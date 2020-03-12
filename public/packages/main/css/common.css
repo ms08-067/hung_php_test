@@ -1,0 +1,586 @@
+body{
+	overflow:hidden;
+}
+body.sm_page_520x{	
+	width:520px;
+	margin:0;
+	padding:0;
+	border:0;
+}
+.right{
+    float:right;
+}
+
+.sm_front_panel {
+    background: none repeat scroll 0 0 #F5F7FA;
+    border-bottom: 1px dashed #D2D2D2;
+    border-top: 1px solid #E2E2E2;
+    border-radius: 2px 2px 0 0;
+    padding: 10px;
+}
+.sm810 .sm_front_panel
+{
+	width: 790px;
+}
+.sm520 .sm_front_panel
+{
+	width: 500px;
+}
+.sm_front_panel ul li {
+    display: inline-block;
+}
+.sm_front_panel ul li a {
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 10px;
+}
+.btn_go_admin {
+    background: url("../img/gotoadmin.png") repeat-x scroll left top #0074B5;
+    border: 1px solid #00476F;
+}
+.btn_go_admin:hover {
+    background: none repeat scroll 0 0 #0074B5;
+    text-decoration: none !important;
+}
+.btn{
+
+}
+.btn_go_create {
+    background: url("../img/postjobs.png") repeat-x scroll left top #5C9443;
+    border: 1px solid #385B28;
+}
+.btn_go_create:hover {
+    background: none repeat scroll 0 0 #5C9443;
+    text-decoration: none !important;
+}
+
+
+.sm_btn_group{
+
+}
+.sm_btn{
+    background-repeat: repeat-x;
+    background-position: left top;
+    background-attachment: scroll;
+    border-width: 1px;
+    border-style: solid;
+    color: #FFFFFF;
+    display: inline;
+    font-size: 11px;
+    font-weight: bold;
+    height: 24px;
+    line-height: 100%;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.sm_btn_blue{
+    background-image: url("../img/gotoadmin.png");
+    background-color:#0074B5;
+    border-color:#00476F;
+}
+
+.sm_btn.gray{
+    background-image: url("../img/bg_add.png");
+    border: 1px solid #CCCCCC;
+    color: #000000;
+}
+
+.sm_btn.green{
+    background-color:#55893E;
+    background-image: url("../img/btn_green.png");
+    border: 1px solid #385B28;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.sm_btn.ok{
+    background-color: #55893E;
+    background-image: url("../img/btn_green.png");
+    border: 1px solid #385B28;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 24px;
+    line-height: 100%;
+}
+
+.sm_btn:hover,
+.sm_btn_blue:hover,
+.sm_btn.gray:hover{
+    background-image: none;
+}
+
+
+
+
+.sm_switch_panel{
+    top: 0;
+    position: absolute;
+    right: 0;
+}
+.sm_select_fanpage{
+    position: absolute;
+    bottom: 3px;
+    right: 0px;
+}
+.sm_select_fanpage form>*{
+	vertical-align: middle;
+}
+.sm_select_fanpage select{
+    width: 190px;
+    font-size: 10pt;
+    height: 22px;
+    padding: 2px;
+    vertical-align: middle;
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+}
+.sm_select_fanpage .btn_go_create{
+    border: 1px solid #385B28;
+    display: block;
+    float: right;
+    height: 26px;
+    margin-left: 3px;
+    width: 35px;
+}
+.sm_select_fanpage .btn_go_fanpage > a{
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    line-height: 26px;
+    text-align: center;
+    width: 100%;
+}
+
+.sm_label{
+
+}
+.sm_label_admin{
+    background-image: url("../img/bg_seeker.png");
+    background-repeat: repeat-x;
+    background-position: left top;
+    background-color: transparent;
+    background-attachment: scroll;
+    border-color: #E7E7E7;
+    border-radius: 0 0 7px 7px;
+    border-style: solid;
+    border-width: 1px;
+    color: #444444;
+    display: block;
+    font-size: 18px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    text-shadow: 2px 1px 2px #333333;
+}
+.sm_label_admin:hover{
+    background: url("../img/bg_dt.png") repeat-x scroll left top transparent;
+    border-color: #00476F;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+}
+.sm_label_admin span{
+    background: url("../img/for_jobseeker.png") no-repeat scroll right center transparent;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 30px;
+    padding: 0 25px 0 0;
+    text-shadow: 0 0 0 #333333;
+}
+
+
+.sm_logo_panel{
+    position: absolute;
+    top:  8px;
+    left: 0px;
+}
+.sm_logo_panel > table.container{
+    border: 0px none;
+}
+.sm_logo_panel > table.container td{
+    vertical-align: top;
+}
+.sm_logo_panel > table.container .logo{
+    padding-right: 8px;
+}
+.sm_logo_panel > table.container .logo img{
+    width: 64px;
+    height: 64px;
+}
+.sm_logo_panel > table.container h1,
+.sm_logo_panel > table.container .app_name{
+    font-size: 16pt;
+    margin-bottom: 12px;
+}
+.sm_logo_panel > table.container .social_plugin{
+
+}
+.sm_error_panel{
+    background-color: #FFF9D7;
+    border-bottom: 1px solid #E2C822;
+    color: #FF0000;
+    padding: 10px 0px 10px 160px;
+}
+.sm_error_panel p{
+    font-weight: bold;
+}
+.sm_error_panel>ul{
+    list-style: square inside none;
+}
+.sm_error_panel>ul ul{
+    list-style: circle inside none;
+    padding-left: 14px;
+}
+
+.sm_sponsors_list{
+    padding: 20px;
+}
+.sm_sponsors_list h1{
+    font-size: 12px;
+}
+.sm_sponsors_list p{
+    font-size: 12px;
+}
+.sm_sponsors_list ul{
+    list-style: square inside none;
+}
+.sm_sponsors_list .list_choose_pages{
+	margin-top: 12px;
+}
+.sm_sponsors_list li{
+	padding-bottom: 4px;
+}
+.sm_sponsors_list a{
+	color: #3B5998;
+}
+.sm_icon_hint{
+    padding-left: 3px;
+    line-height: 16px;
+}
+
+.sm_like_container{
+    bottom: 0px;
+    left: 22px;
+    width: 162px;
+    position: absolute;
+}
+
+table.sm-tbl-classic{
+    width: 100%;
+    clear:both;
+    margin-top: 24px;
+}
+table.sm-tbl-classic td,
+table.sm-tbl-classic th{
+    text-align: left;
+    padding: 0 6px;
+}
+table.sm-tbl-classic td
+{
+}
+/*Head*/
+table.sm-tbl-classic thead tr
+{
+    border-bottom: 1px solid #DADADA;
+    border-top: 1px solid #DADADA;
+    background-color: #f3f3f3;
+    color: #000000;
+    height: 37px;
+    line-height: 37px;
+}
+table.sm-tbl-classic thead tr>*{
+    border-right: 1px solid #DADADA;
+}
+table.sm-tbl-classic th
+{
+    font-weight: bold;
+}
+table.sm-tbl-classic th:hover{
+    background-color: #e3e3e3;
+}
+table.sm-tbl-classic th>*{
+    vertical-align: middle;
+    display: block;
+    height: 100%;
+    vertical-align: middle;
+    width: 100%;
+}
+table.sm-tbl-classic th>a{
+    color:#000000;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+table.sm-tbl-classic th>a.desc{
+    background-image: url(../img/arrow-desc.gif);
+}
+table.sm-tbl-classic th>a.asc{
+    background-image: url(../img/arrow-asc.gif);
+}
+table.sm-tbl-classic th>*>*{
+    vertical-align: middle;
+}
+/*End Head*/
+
+
+/*Body*/
+table.sm-tbl-classic tbody tr
+{
+    color: #525252;
+    font-size: 12px;
+    height: 37px;
+    line-height: 37px;
+    border-bottom: 1px dashed #CCCCCC;
+}
+table.sm-tbl-classic tbody tr:hover
+{
+    background:#f7f7f7;
+}
+/*End Body*/
+
+table.sm-tbl-classic tfoot tr
+{
+    height: 37px;
+    line-height: 37px;
+}
+table.sm-tbl-classic tfoot tr td{
+    text-align: right;
+    padding-right: 12px;
+}
+
+.sm-paginator-item-empty{    
+    float: left;
+    width: 100%;
+}
+.sm-paginator-item-empty>p{
+    margin-top: 24px;
+    padding: 10px;
+    background-color: #FFF9D7;
+    border-bottom: 1px solid #FFE251;
+    border-top: 1px solid #FFE251;   
+	text-align: left;
+	color: #FF0000;
+}
+.sm-clear-left{
+    
+   clear: left; 
+}
+.ym_footer {
+    background-color: #FEFEFE;
+    display: block;
+    height: 34px;
+    margin: auto;
+    float:right;
+}
+.footer_contain_img {
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 34px;
+    padding: 1px;
+    width: 273px;
+}
+.footer_img {
+    background-image: url("../img/footer_image.png");
+	background-position: right top;
+    display: block;
+    height: 32px;
+	background-repeat:  no-repeat;
+}
+.footer_img:hover {
+	background-position: right -33px;
+}
+
+.sm_admin_pannel {
+    background: #FFF8E5;
+    border-top: 1px solid #CBC9CA;
+    height: 24px;
+    margin-bottom: 20px;
+    padding: 12px 10px;
+    vertical-align: middle;
+}
+.sm_admin_setting {
+    background: url("../img/configure-icon.png") no-repeat scroll left center #FFF8E5;
+    float: left;
+    height: 24px;
+    line-height: 24px;
+    padding-left: 32px;
+    text-align: left;
+    vertical-align: middle;
+    width: 172px;
+}
+.sm_admin_setting_text {
+    color: #395B98;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.sm_paypal {
+    height: 24px;
+    line-height: 24px;
+    text-align: left;
+    vertical-align: middle;
+}
+.sm_paypal > span {
+    font-size: 13px;
+    height: 24px;
+    line-height: 24px;
+    vertical-align: top;
+	padding-right: 5px;
+}
+
+.sm_select_fanpage {
+    bottom: 10px;
+    position: absolute;
+    right: 0;
+}
+.sm_select_fanpage select{
+	max-width: 200px;
+    border-width: 1px;
+}
+.sm_select_fanpage span.sm_button{
+	display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    margin-left: 4px;
+}
+.sm_select_fanpage span.sm_button > a{
+	color: #FFFFFF;
+    padding: 0 5px;
+}
+
+.sm_button.green{
+	background: url("../img/btn_bg_green.png") repeat-x scroll left top #5C9443;
+    border: 1px solid #385B28;
+	text-shadow:0 -1px 1px rgba(56,91,40,0.25);
+}
+
+.sm_button.green:hover
+{
+    background-image: none;
+}
+
+.btn_green a
+{
+	background:url('../img/icon_loadfan.png') no-repeat left 4px;
+	color:#fff;
+	display:block;
+	font-weight:bold;
+	padding:9px 10px 9px 30px;
+}
+.btn_green {
+    background: url('../img/btn_green.png') repeat-x scroll left top transparent;
+    border: 1px solid #385B28;
+    border-radius: 4px 4px 4px 4px;
+    display: inline-block;
+    padding:0px 10px 0px 20px;
+	line-height: 12px;
+}
+form.sm_form .errors{
+	color:red;
+}
+form.sm_form .errors li{
+	line-height: 18px;
+    padding-top: 8px;
+}
+form.sm_form .hint{
+
+}
+form.sm_form .hint>*{
+	vertical-align: middle;
+}
+form.sm_form .hint>img{
+	margin-right: 6px;
+}
+form.sm_form dt>label{
+
+}
+form.sm_form input[type="text"],
+form button,
+form select{	
+	height: 20px;
+	padding: 2px;
+	box-sizing: content-box;
+    -moz-box-sizing:content-box;
+    -webkit-box-sizing:content-box;
+}
+form.sm_form select{
+	height: 20px;
+    padding: 2px;
+}
+
+form.sm_form dt>label.required:before{
+	color: #FF0000;
+	content: "*";
+	padding-right: 3px;
+}
+
+form.sm_form.advanced{
+
+}
+
+form.sm_form.advanced>dl>dd>fieldset>dl>dt,
+form.sm_form.advanced>dl>dt.sm_inside_main_form_label,
+form.sm_form.classic>dl>dt
+{
+	clear: left;
+    float: left;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 14px;
+    text-align: right;
+    width: 122px;
+}
+form.sm_form.advanced>dl>dd>fieldset>dl>dd,
+form.sm_form.classic>dl>dd{
+	float:left;
+	display: block;
+	padding-bottom: 20px;
+	line-height: 32px;
+	width: 500px;
+}
+
+form.sm_form.advanced>dl>dt.sm_inside_main_form_label+dd{
+	display: block;
+	padding-bottom: 20px;
+}
+form.sm_form.advanced>dl>dd>fieldset>legend{
+	font-weight: bold;
+	font-size: 16px;
+	padding-bottom: 12px;
+}
+form.sm_form.advanced>dl>dd>fieldset>dl>dd>*,
+form.sm_form.classic>dl>dd>*{
+	vertical-align: middle;
+	max-width: 100%;
+}
+form.sm_form.advanced>dl>dd>fieldset>dl>dd.hide{
+	display: none;
+}
+form.sm_form.advanced>dl>dd>fieldset>dl>dd textarea,
+form.sm_form.classic>dl>dd textarea{
+	width: 100%;
+}
+
+form.sm_form.advanced>dl>dd>fieldset>dl>dd>label,
+form.sm_form.classic>dl>dd>label{
+	height: 24px;
+	line-height: 24px;
+}
+form.sm_form.advanced>dl>dd>fieldset>dl>dd>label>*,
+form.sm_form.classic>dl>dd>label>*{
+	margin-right: 4px;
+}
+.sm_form.classic input[type="radio"],
+.sm_form.classic input[type="checkbox"],
+.sm_form.advanced input[type="radio"],
+.sm_form.advanced input[type="checkbox"]
+{
+    vertical-align: sub;
+    margin: 3px 4px 3px 4px;
+    height: 13px;
+}

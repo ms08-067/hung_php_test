@@ -1,0 +1,36 @@
+html,body{width:100%;height:100% !important;padding:0}
+object{display:block}
+body{background:#000;color:#000;font-size:14px;font-family:"Segoe UI","Segoe UI Web Regular","Segoe UI Symbol","SegoeUIWF","Helvetica Neue","BBAlpha Sans","S60 Sans",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{text-decoration:none}a:hover{text-decoration:none}
+div.center-container{width:1000px;margin:0 auto;position:relative}
+div.tab{border-bottom:1px solid #ddd}div.tab ul.pmgHTabBtn{float:left;position:relative}div.tab ul.pmgHTabBtn li{display:inline-block;zoom:1;margin-right:10px}div.tab ul.pmgHTabBtn li>a{display:inline-block;margin-bottom:-1px;background-color:#fff;border:solid 1px #ddd;color:#333;padding:10px;text-decoration:none;font-size:16px;font-weight:700}
+div.tab ul.pmgHTabBtn li.pmgHTabSelected{position:relative;text-align:center;background-color:#f4f4f4 !important}
+div.tab ul.pmgHTabBtn li.pmgHTabSelected a{border-bottom-color:#f4f4f4;background-color:#f4f4f4;color:#000}
+div#registry-form{border:5px solid #507dbf;background:#f4f4f4;margin:0 auto;position:absolute;top:80px;left:240px;z-index:5;width:515px}div#registry-form div.header{background:#fff}div#registry-form div.header .li-logo{position:relative;width:95px;height:40px;top:15px;left:18px}
+div#registry-form div.header .logo{background:transparent url('../img/v2/logo-amo-light.png');width:71px;height:26px;position:absolute}
+div#registry-form div.form-container{padding:5px 0 5px 10px;width:340px;height:270px}
+div#registry-form h1{margin:0 0 20px 0;text-align:center}
+div#registry-form .form-group{margin:10px auto}
+div#registry-form .form-label{text-align:right;width:115px;line-height:30px}
+div#registry-form .form-input{margin-left:20px}div#registry-form .form-input input{width:170px;background:#fff}
+div#registry-form .form-submit-container .btn-2{height:50px;width:140px;font-size:1.3em;line-height:1.3em;background:#f60;text-align:center;padding:0;color:#fff}div#registry-form .form-submit-container .btn-2.disabled{background:#e4e4e4;color:#000}
+div#registry-form .form-submit{margin:15px auto;text-align:center}
+div#registry-form .form-social{text-align:center;margin:20px auto}div#registry-form .form-social .google{width:60px;height:43px;background:transparent url('../img/banner/google.png') no-repeat;display:-moz-inline-stack;display:inline-block;zoom:1;*display:inline}
+div#registry-form .form-social .facebook{width:60px;height:43px;background:transparent url('../img/banner/facebook.png') no-repeat;display:-moz-inline-stack;display:inline-block;zoom:1;*display:inline}
+div#registry-form .form-social-container{padding-top:16px;padding-right:20px;width:140px}
+div#registry-form .form-captcha{text-align:center}
+div#registry-form .form-error{margin:5px 0}
+div#registry-form .text-error{color:#e91818;text-align:center;line-height:1.4}
+div#registry-form img.img-captcha{border:1px solid #dedede;cursor:pointer}
+.btn-1{background:#f60 url('../img/v2/arrow.png') no-repeat right center;color:#fff;padding:3px 35px 5px 12px !important;border:none}.btn-1:hover,.btn-1:focus,.btn-1:active,.btn-1.active{background:#ff8533 url('../img/v2/arrow_hover.png') no-repeat right center !important;outline:none}
+.click-frame{cursor:pointer}
+.fleft{float:left;display:inline}
+.fright{float:right;display:inline}
+.clearfix:before,.clearfix:after{content:"";display:table}
+.clearfix:after{clear:both}
+.clearfix{*zoom:1}
+.inline-block{display:-moz-inline-stack;display:inline-block;zoom:1;*display:inline}
+.ajax-loading{background:transparent url('../img/v2/ajaxloading_mini.gif') no-repeat;width:16px;height:16px;margin:10px auto}
+#form-login .form-submit .text-error{margin:10px auto}
+.ajax-loading-mini{background:transparent url('../img/v2/ajaxloading.gif') no-repeat;width:50px;height:11px;margin:0 auto}
+.close{display:block;width:42px;height:20px;background:url('../img/v2/close-mini.png') top right no-repeat;text-align:right;outline:none;top:10px;right:10px;position:absolute;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha( Opacity= @transparent )";filter:alpha(opacity=70);-moz-opacity:.7;-khtml-opacity:.7;opacity:.7}.close:hover{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha( Opacity= @transparent )";filter:alpha(opacity=70);-moz-opacity:1;-khtml-opacity:1;opacity:1}

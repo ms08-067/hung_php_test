@@ -1,0 +1,307 @@
+html, body {
+	width: 100%;
+	height: 100% !important;
+	padding: 0;
+}
+
+object{
+	display: block;
+}
+
+body{
+	background: #000;
+	color:#000;
+	font-size: 14px;
+	font-family: "Segoe UI","Segoe UI Web Regular","Segoe UI Symbol","SegoeUIWF","Helvetica Neue","BBAlpha Sans","S60 Sans",Arial,sans-serif;
+
+	-webkit-font-smoothing:antialiased;
+}
+
+a{
+	text-decoration: none;
+
+	&:hover{
+		text-decoration: none;
+	}
+}
+
+div.center-container{
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+
+div.tab{
+	border-bottom: 1px solid #DDD;
+
+	ul.pmgHTabBtn{
+		float: left;
+		position: relative;
+
+		li{
+			display: inline-block;
+			zoom: 1;
+
+			margin-right: 10px;
+
+			& > a {
+				display: inline-block;
+				margin-bottom: -1px;
+				background-color: #fff;
+				border: solid 1px #DDD;
+				color: #333;
+				padding: 10px;
+				text-decoration: none;
+				font-size: 16px;
+
+				font-weight: 700;
+			}
+
+			&.pmgHTabSelected {
+				position: relative;
+				text-align: center;
+				background-color: #F4F4F4 !important;
+			}
+
+			&.pmgHTabSelected a {
+				border-bottom-color: #F4F4F4;
+				background-color: #F4F4F4;
+				color: #000;
+			}
+		}
+	}
+}
+
+div#registry-form{
+	border: 5px solid #507DBF;
+	background: #F4F4F4;
+	margin: 0 auto;
+	position: absolute;
+	top: 80px;
+	left: 240px;
+	z-index: 5;
+	width: 515px;
+
+	div.header{
+		background: #fff;
+
+		.li-logo{
+			position: relative;
+			width: 95px;
+			height: 40px;
+			top: 15px;
+			left: 18px;
+		}
+
+		.logo{
+			background: transparent url('../img/v2/logo-amo-light.png');
+			width: 71px;
+			height: 26px;
+			position: absolute;
+		}
+	}
+
+	div.form-container{
+		padding: 5px 0 5px 10px;
+		width: 340px;
+		height: 270px;
+	}
+
+	h1{
+		margin: 0 0 20px 0;
+		text-align: center;
+	}
+
+	.form-group{
+		margin: 10px auto;
+	}
+
+	.form-label{
+		text-align: right;
+		width: 115px;
+		line-height: 30px;
+	}
+
+	.form-input{
+		margin-left: 20px;
+
+		input{
+			width: 170px;
+			background:  #fff;
+		}
+	}
+
+	.form-submit-container{
+		.btn-2{
+			height: 50px;
+			width: 140px;
+			font-size: 1.3em;
+			line-height: 1.3em;
+			background: #F60;
+			text-align: center;
+			padding: 0;
+			color: #fff;
+
+			&.disabled{
+				background: #E4E4E4;
+				color: #000;
+			}
+		}
+	}
+
+	.form-submit{
+		margin: 15px auto;
+		text-align: center;
+	}
+
+	.form-social{
+		text-align: center;
+		margin: 20px auto;
+
+		.google{
+			width: 60px;
+			height: 43px;
+			background: transparent url('../img/banner/google.png') no-repeat;
+
+			.inline-block;
+		}
+
+		.facebook{
+			width: 60px;
+			height: 43px;
+			background: transparent url('../img/banner/facebook.png') no-repeat;
+
+			.inline-block;
+		}
+	}
+
+	.form-social-container{
+		padding-top: 16px;
+		padding-right: 20px;
+		width: 140px;
+	}
+
+	.form-captcha{
+		text-align: center;
+	}
+
+	.form-error{
+		margin: 5px 0;
+	}
+
+	.text-error{
+		color: #E91818;
+		text-align: center;
+		line-height: 1.4;
+	}
+
+	img.img-captcha{
+		border: 1px solid #DEDEDE;
+		cursor: pointer;
+	}
+}
+
+.btn-1{
+	background: #F60 url('../img/v2/arrow.png') no-repeat right center;
+	color: #FFF;
+	padding: 3px 35px 5px 12px !important;
+	border: none;
+
+	&:hover, &:focus, &:active, &.active{
+		background: lighten(#F60, 10%) url('../img/v2/arrow_hover.png') no-repeat right center !important;
+		outline: none;
+	}
+}
+
+.click-frame{
+	cursor: pointer;
+}
+
+/////////////////////////////// GENERAl
+.fleft{
+	float:left;
+	display:inline;
+}
+
+.fright{
+	float:right;
+	display:inline;
+}
+
+// better clearfix
+/* For modern browsers */
+.clearfix:before,
+.clearfix:after {
+  content:"";
+  display:table;
+}
+
+.clearfix:after {
+clear:both;
+}
+
+/* For IE 6/7 (triggers hasLayout) */
+.clearfix {
+  *zoom:1;
+}
+
+.inline-block{
+	display:-moz-inline-stack;
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+}
+
+.ajax-loading{
+	background:transparent url('../img/v2/ajaxloading_mini.gif') no-repeat;
+	width:16px;
+	height:16px;
+	margin:10px auto;
+}
+
+#form-login .form-submit .text-error{
+	margin:10px auto;
+}
+
+.ajax-loading-mini{
+	background: transparent url('../img/v2/ajaxloading.gif') no-repeat;
+	width: 50px;
+	height: 11px;
+	margin: 0 auto;
+}
+
+.close{
+	display: block;
+	width: 42px;
+	height: 20px;
+	background: url('../img/v2/close-mini.png') top right no-repeat;
+	text-align: right;
+	outline: none;
+
+	top: 10px;
+	right: 10px;
+	position: absolute;
+
+	.opacity(70);
+
+	&:hover{
+		.opacity(100);
+	}
+}
+
+.opacity(@transparent: 50)
+{
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha( Opacity= @transparent )";
+
+  /* IE 5-7 */
+  filter: alpha(opacity= @transparent );
+
+  /* Netscape */
+  -moz-opacity: (@transparent / 100);
+
+  /* Safari 1.x */
+  -khtml-opacity: (@transparent / 100);
+
+  /* Good browsers */
+  opacity: (@transparent / 100);
+}

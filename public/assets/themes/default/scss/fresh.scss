@@ -1,0 +1,21 @@
+.modal {
+	.modal-body {
+
+			img {
+				margin-right: 2rem;
+				margin-bottom: 2rem;
+			}
+
+			p:after {
+				clear: both;
+			}
+
+			table {
+				tr {
+					td {
+						vertical-align: top;	
+					}
+				}
+			}
+	}
+}
