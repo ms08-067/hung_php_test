@@ -857,7 +857,8 @@ class IndexController extends AdminController {
 				"intro_txt" => strip_tags($request->intro_txt,'<p><b><strong><u><i><ul><li><em><h1><h2><h3><h4><h5><h6><a><img><br/><hr><br/>'),
 				"content" => strip_tags($request->content,'<p><b><strong><u><i><ul><li><em><h1><h2><h3><h4><h5><h6><a><img><br><hr><br/>'),
 				"published_at" => null,
-				"status" => $request->status
+				"status" => $request->status,
+				"updated_at" => date("Y-m-d H:i:s")
 			];
 
 			if($request->status == 1){

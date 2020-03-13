@@ -119,8 +119,8 @@
 
     $(function(){
         $("#published_at").datetimepicker({
-            startDate: new Date(),
-            minDate: new Date(), 
+            //startDate: new Date(),
+            //minDate: new Date(), 
             format: 'yyyy-mm-dd hh:ii' 
         });       
     });
