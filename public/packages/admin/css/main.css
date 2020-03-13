@@ -472,3 +472,9 @@ table.text-center td,table.text-center th{text-align:center}
 	text-align: center;
 }
 section { overflow: auto; }
+#particles-js {
+  width: 100%;
+  height: 99%;
+  position: absolute;
+  z-index: -1;
+}

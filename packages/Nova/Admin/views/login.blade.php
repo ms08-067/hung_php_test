@@ -51,6 +51,7 @@
 
 <body id="bodyLogin" style="margin-top: -20px;">
 
+    <div id="particles-js"></div>
 
 
      <div class="main">
@@ -270,7 +271,8 @@
 
 
     {{ Html::script('packages/tinymce/tinymce.min.js') }}
-
+    {{ Html::script('packages/main/js/particles.min.js') }}
+    {{ Html::script('packages/main/js/app-particle.js') }}
 
 
     <!-- combodate && momentjs -->

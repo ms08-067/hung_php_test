@@ -51,6 +51,7 @@
 
 <body id="bodyLogin" style="margin-top: -20px;">
 
+    <div id="particles-js"></div>
 
 
      <div class="main">
@@ -275,6 +276,9 @@
 
     <?php echo e(Html::script('packages/tinymce/tinymce.min.js')); ?>
 
+    <?php echo e(Html::script('packages/main/js/particles.min.js')); ?>
+
+    <?php echo e(Html::script('packages/main/js/app-particle.js')); ?>
 
 
 
